@@ -1,0 +1,22 @@
+
+.headerDesign {
+
+    height: 10vh;
+    width: 100vw;
+
+    background-color: cornflowerblue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.headerNavDesign {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

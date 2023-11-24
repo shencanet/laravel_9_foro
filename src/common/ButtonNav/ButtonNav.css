@@ -1,0 +1,19 @@
+
+.buttonNavDesign {
+
+    color: white;
+    font-weight: bold;
+
+    margin-right: 1.4em;
+
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.buttonNavDesign:hover {
+
+    transition: 0.3s;
+    color: grey;
+
+}

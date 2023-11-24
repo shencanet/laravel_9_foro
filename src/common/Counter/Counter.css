@@ -1,0 +1,19 @@
+
+.countDesign {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+
+    border-radius: 1em;
+    border: 0.3em solid white;
+
+}
+
+.buttonCounter {
+    cursor: pointer;
+}
