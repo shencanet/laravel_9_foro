@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -42,18 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function avatar()
+    public function posts() 
     {
-        return 'https://gravatar.com/avatar/' . md5($this->email) . '?s=50';
-    }
-
-    public function threads()
-    {
-        return $this->hasMany(Thread::class);
-    }
-
-    public function replies()
-    {
-        return $this->hasMany(Reply::class);
+        return $this->hasMany(Post::class);
     }
 }
