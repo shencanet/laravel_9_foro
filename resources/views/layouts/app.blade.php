@@ -7,15 +7,14 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gradient-to-r from-slate-800 to-slate-900">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 h-2"></div>
+
             @include('layouts.navigation')
-
-
 
             <!-- Page Content -->
             <main>
